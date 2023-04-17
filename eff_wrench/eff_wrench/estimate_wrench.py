@@ -4,8 +4,6 @@ from rclpy.node import Node
 
 from typing import Tuple
 
-from scipy.optimize import minimize
-
 qos_profile = qos.qos_profile_system_default
 
 import optas
