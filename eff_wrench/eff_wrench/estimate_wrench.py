@@ -37,6 +37,9 @@ class EstimateWrenchNode(Node):
         self.J = robot.get_global_link_geometric_jacobian_function(
             link_name, numpy_output=True
         )
+        self.get_logger().info(
+            "Expected joint order:" + str(robot.actuated_joint_names)
+        )
 
         # Setup wrench publisher
         self.wrench_pub = self.create_publisher(WrenchStamped, "wrench", qos_profile)
