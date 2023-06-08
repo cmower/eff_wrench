@@ -16,6 +16,7 @@ setup(
     maintainer_email="christopher.mower@kcl.ac.uk",
     description="ROS 2 node for estimating end-effector wrench.",
     license="GNU General Public License v3.0",
+    install_requires = ["pyoptas", "numpy"],
     tests_require=["pytest"],
     entry_points={
         "console_scripts": ["estimate_wrench = eff_wrench.estimate_wrench:main"],

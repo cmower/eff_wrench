@@ -7,10 +7,8 @@ This ROS package implements a node that estimates the wrench applied at the end-
 1. Change directory: `$ cd /path/to/your_ws/src`
 2. Clone repository
    - (ssh) `$ git clone git@github.com:cmower/eff_wrench.git`
-   - (https) `$ git clone https://github.com/cmower/eff_wrench.git`
-3. Install [optas](https://github.com/cmower/optas#install). Note, currently OpTaS is not hosted on PyPi - this will change in the future.
-4. Change directory: `$ cd /path/to/your_ws`
-5. Build workspace: `$ colcon build`
+3. Change directory: `$ cd /path/to/your_ws`
+4. Build workspace: `$ colcon build`
 
 
 ## Node: `estimate_wrench`
